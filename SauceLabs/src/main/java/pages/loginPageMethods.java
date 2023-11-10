@@ -16,18 +16,19 @@ public class loginPageMethods extends commonUtilities {
 
 	public loginPageMethods inputPassword() {
 		driver.findElement(loc.password).sendKeys("secret_sauce");
-		return this;
+		//return this;
 	}
 
 	public loginPageMethods login() {
 		driver.findElement(loc.sign_in).click();
 		return this;
 	}
+	
 ////////////////////////Assertion Methods///////////////////////////
 
 	public loginPageMethods verifySuccessLogin() {
 		String actual = driver.getCurrentUrl();
-		String expected = "https://www.saucedemo.com/inventory.htm";
+		String expected = "https://www.saucedemo.com/inventory.html";
 		Assert.assertEquals(actual, expected);
 		return this;
 	}
