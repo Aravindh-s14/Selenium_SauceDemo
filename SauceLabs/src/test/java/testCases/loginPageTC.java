@@ -15,14 +15,23 @@ public class loginPageTC extends loginPageMethods{
 		setup();
 	}
 	
-	@Test()
+	@Test(priority = 0)
 	public void loginTC_01() {
 		new loginPageMethods()
-		.inputEmaildId()
-		.inputPassword()
+		.inputPassword("secret_sauce")
 		.login()
-		.verifySuccessLogin();
+		.noUsername();
 	}
+	
+	@Test(priority=2)
+	public void loginTC_02(){
+		new loginPageMethods()
+		.inputEmaild("standard_user")
+		.inputPassword("")
+		.login()
+		.noPassword();
+	}
+	
 	
 
 }

@@ -5,7 +5,7 @@
     <classes>
       <class name="testCases.loginPageTC">
         <methods>
-          <include name="loginTC_01"/>
+          <include name="loginTC_02"/>
           <include name="initialSetup"/>
         </methods>
       </class> <!-- testCases.loginPageTC -->
