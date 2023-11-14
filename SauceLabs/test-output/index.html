@@ -50,7 +50,7 @@
               <ul>
                 <li>
                   <a href="#" panel-name="test-xml-Suite" class="navigator-link ">
-                    <span>D:\Sauce_Labs\SauceLabs\testng2.xml</span>
+                    <span>D:\Sauce_Labs\SauceLabs\herokuApp.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -92,7 +92,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">3 methods,   3 passed</span>
+                    <span class="method-stats">2 methods,   2 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -103,17 +103,12 @@
                     <div class="method-list-content passed suite-Suite">
                       <span>
                         <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testCases.herokuTestCase" class="method navigator-link" hash-for-method="TC_01">TC_01</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-Suite" title="testCases.loginPageTC" class="method navigator-link" hash-for-method="loginTC_05">loginTC_05</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="testCases.productPageTC" class="method navigator-link" hash-for-method="productTC_01">productTC_01</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="testCases.productPageTC" class="method navigator-link" hash-for-method="productTC_02">productTC_02</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Suite -->
@@ -131,21 +126,14 @@
           <div class="suite-Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
-              <span class="class-name">testCases.productPageTC</span>
+              <span class="class-name">testCases.herokuTestCase</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="productTC_01">
-                  </a> <!-- productTC_01 -->
-                  <span class="method-name">productTC_01</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="productTC_02">
-                  </a> <!-- productTC_02 -->
-                  <span class="method-name">productTC_02</span>
+                  <a name="TC_01">
+                  </a> <!-- TC_01 -->
+                  <span class="method-name">TC_01</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -168,7 +156,7 @@
         </div> <!-- panel Suite -->
         <div panel-name="test-xml-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">D:\Sauce_Labs\SauceLabs\testng2.xml</span>
+            <span class="header-content">D:\Sauce_Labs\SauceLabs\herokuApp.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -182,7 +170,7 @@
           &lt;include name=&quot;loginTC_05&quot;/&gt;
         &lt;/methods&gt;
       &lt;/class&gt; &lt;!-- testCases.loginPageTC --&gt;
-      &lt;class name=&quot;testCases.productPageTC&quot;/&gt;
+      &lt;class name=&quot;testCases.herokuTestCase&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Test --&gt;
 &lt;/suite&gt; &lt;!-- Suite --&gt;
@@ -222,24 +210,20 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(3);
+data.addRows(2);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'loginTC_05')
-data.setCell(0, 2, 'testCases.loginPageTC')
-data.setCell(0, 3, 412);
+data.setCell(0, 1, 'TC_01')
+data.setCell(0, 2, 'testCases.herokuTestCase')
+data.setCell(0, 3, 8306);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'productTC_01')
-data.setCell(1, 2, 'testCases.productPageTC')
-data.setCell(1, 3, 160);
-data.setCell(2, 0, 2)
-data.setCell(2, 1, 'productTC_02')
-data.setCell(2, 2, 'testCases.productPageTC')
-data.setCell(2, 3, 100);
+data.setCell(1, 1, 'loginTC_05')
+data.setCell(1, 2, 'testCases.loginPageTC')
+data.setCell(1, 3, 765);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 672 ms</span>
+              <span class="suite-total-time">Total running time: 9 seconds</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -260,13 +244,13 @@ return data;
             <div class="ignored-class-div">
               <span class="ignored-class-name">testCases.loginPageTC</span>
               <div class="ignored-methods-div">
-                <span class="ignored-method-name">loginTC_01</span>
-                <br/>
                 <span class="ignored-method-name">loginTC_02</span>
                 <br/>
                 <span class="ignored-method-name">loginTC_03</span>
                 <br/>
                 <span class="ignored-method-name">loginTC_04</span>
+                <br/>
+                <span class="ignored-method-name">loginTC_01</span>
                 <br/>
               </div> <!-- ignored-methods-div -->
             </div> <!-- ignored-class-div -->
@@ -285,25 +269,23 @@ return data;
               </div> <!-- configuration-suite before -->
               <div class="test-method">
                 <span class="method-name">loginTC_05</span>
-                <span class="method-start">2597 ms</span>
+                <span class="method-start">3864 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
-              <div class="chronological-class-name">testCases.productPageTC</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">testCases.herokuTestCase</div> <!-- chronological-class-name -->
               <div class="test-method">
-                <span class="method-name">productTC_01</span>
-                <span class="method-start">3015 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">productTC_02</span>
-                <span class="method-start">3177 ms</span>
+                <span class="method-name">TC_01</span>
+                <span class="method-start">4637 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">testCases.loginPageTC</div> <!-- chronological-class-name -->
               <div class="configuration-suite after">
+                <img src="failed.png">
+                </img>
                 <span class="method-name">close</span>
-                <span class="method-start">3333 ms</span>
+                <span class="method-start">13004 ms</span>
               </div> <!-- configuration-suite after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

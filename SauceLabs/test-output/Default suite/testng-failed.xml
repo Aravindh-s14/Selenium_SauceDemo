@@ -3,12 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="testCases.loginPageTC">
+      <class name="testCases.herokuTestCase">
         <methods>
-          <include name="loginTC_02"/>
-          <include name="initialSetup"/>
+          <include name="TC_01"/>
         </methods>
-      </class> <!-- testCases.loginPageTC -->
+      </class> <!-- testCases.herokuTestCase -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
