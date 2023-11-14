@@ -92,7 +92,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">3 methods, 1 failed,   2 passed</span>
+                    <span class="method-stats">5 methods, 1 failed,   4 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title failed">Failed methods</span>
@@ -118,6 +118,16 @@
                       <span>
                         <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-Suite" title="testCases.herokuTestCase" class="method navigator-link" hash-for-method="Basic_Auth_Checking">Basic_Auth_Checking</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testCases.herokuTestCase" class="method navigator-link" hash-for-method="checkbox_checking">checkbox_checking</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testCases.herokuTestCase" class="method navigator-link" hash-for-method="contextAlert">contextAlert</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -149,7 +159,7 @@
                   </a> <!-- Broken_Image_Checking -->
                   <span class="method-name">Broken_Image_Checking</span>
                   <div class="stack-trace">java.lang.AssertionError: expected [0] but found [1]
-	at pages.herokuApp.brokenImage(herokuApp.java:57)
+	at pages.herokuApp.brokenImage(herokuApp.java:53)
 	at testCases.herokuTestCase.Broken_Image_Checking(herokuTestCase.java:21)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 ... Removed 34 stack frames
@@ -184,6 +194,20 @@
                   <a name="Basic_Auth_Checking">
                   </a> <!-- Basic_Auth_Checking -->
                   <span class="method-name">Basic_Auth_Checking</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="checkbox_checking">
+                  </a> <!-- checkbox_checking -->
+                  <span class="method-name">checkbox_checking</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="contextAlert">
+                  </a> <!-- contextAlert -->
+                  <span class="method-name">contextAlert</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -245,24 +269,32 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(3);
+data.addRows(5);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'Basic_Auth_Checking')
 data.setCell(0, 2, 'testCases.herokuTestCase')
-data.setCell(0, 3, 6998);
+data.setCell(0, 3, 3832);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'Broken_Image_Checking')
 data.setCell(1, 2, 'testCases.herokuTestCase')
-data.setCell(1, 3, 2945);
+data.setCell(1, 3, 3569);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'loginTC_05')
-data.setCell(2, 2, 'testCases.loginPageTC')
-data.setCell(2, 3, 529);
+data.setCell(2, 1, 'checkbox_checking')
+data.setCell(2, 2, 'testCases.herokuTestCase')
+data.setCell(2, 3, 986);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'contextAlert')
+data.setCell(3, 2, 'testCases.herokuTestCase')
+data.setCell(3, 3, 510);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'loginTC_05')
+data.setCell(4, 2, 'testCases.loginPageTC')
+data.setCell(4, 3, 455);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 10 seconds</span>
+              <span class="suite-total-time">Total running time: 9 seconds</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -283,13 +315,13 @@ return data;
             <div class="ignored-class-div">
               <span class="ignored-class-name">testCases.loginPageTC</span>
               <div class="ignored-methods-div">
-                <span class="ignored-method-name">loginTC_04</span>
-                <br/>
-                <span class="ignored-method-name">loginTC_03</span>
-                <br/>
                 <span class="ignored-method-name">loginTC_02</span>
                 <br/>
                 <span class="ignored-method-name">loginTC_01</span>
+                <br/>
+                <span class="ignored-method-name">loginTC_04</span>
+                <br/>
+                <span class="ignored-method-name">loginTC_03</span>
                 <br/>
               </div> <!-- ignored-methods-div -->
             </div> <!-- ignored-class-div -->
@@ -308,20 +340,28 @@ return data;
               </div> <!-- configuration-suite before -->
               <div class="test-method">
                 <span class="method-name">loginTC_05</span>
-                <span class="method-start">2929 ms</span>
+                <span class="method-start">3144 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">testCases.herokuTestCase</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">Basic_Auth_Checking</span>
-                <span class="method-start">3466 ms</span>
+                <span class="method-start">3609 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">Broken_Image_Checking</span>
-                <span class="method-start">10465 ms</span>
+                <span class="method-start">7443 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">checkbox_checking</span>
+                <span class="method-start">11015 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">contextAlert</span>
+                <span class="method-start">12003 ms</span>
               </div> <!-- test-method -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

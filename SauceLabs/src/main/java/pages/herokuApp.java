@@ -3,19 +3,15 @@ package pages;
 import java.util.List;
 
 import org.apache.http.impl.client.CloseableHttpClient;
-import org.apache.http.impl.client.HttpClientBuilder;
 import org.apache.http.impl.client.HttpClients;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.remote.http.HttpClient;
 import org.testng.Assert;
-import org.apache.http.HttpResponse;
 //import org.apache.http.client.HttpClient;
 import org.apache.http.client.methods.CloseableHttpResponse;
 import org.apache.http.client.methods.HttpGet;
-import org.apache.http.impl.client.HttpClientBuilder;
-
 import utitlities.commonUtilities;
+import org.openqa.selenium.interactions.Actions;
 
 public class herokuApp extends commonUtilities {
 
@@ -66,6 +62,37 @@ public class herokuApp extends commonUtilities {
 		}
 		status = "passed";
 		System.out.println("The page " + iBrokenImageCount + "broken images");
+		return this;
+	}
+	
+	public herokuApp checkBox() {
+		driver.get("https://the-internet.herokuapp.com/checkboxes");
+		waitForElement(By.xpath("//h3[normalize-space()='Checkboxes']"));
+		
+		WebElement checkBox1 = driver.findElement(By.xpath("//form//input[1]"));
+		//boolean isSelected = checkBox1.isSelected();
+		checkBox1.click();
+		if(checkBox1.isSelected()) {
+			System.out.println("Clicked");
+			Assert.assertEquals("Checkbox Checked", "Checkbox Checked");
+		}
+		else {
+			Assert.assertEquals("Unchecked", "Checked");
+		}
+		return this;
+	}
+	
+	//context menu clicking and handlin the alert
+	public herokuApp context_Alert() {
+		driver.get("https://the-internet.herokuapp.com/context_menu");
+		waitForElement(By.xpath("//h3"));
+		
+		Actions actions = new Actions(driver);
+		WebElement div_box = driver.findElement(By.xpath("//div[@id='hot-spot']"));
+		actions.contextClick(div_box).perform();
+		String text = driver.switchTo().alert().getText();
+		System.out.println(text);
+		driver.switchTo().alert().accept();
 		return this;
 	}
 }

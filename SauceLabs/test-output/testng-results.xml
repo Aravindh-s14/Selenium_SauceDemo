@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="3" passed="2" failed="1" skipped="0">
+<testng-results ignored="0" total="5" passed="4" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-11-14T11:23:33 IST" name="Suite" finished-at="2023-11-14T11:23:43 IST" duration-ms="10540">
+  <suite started-at="2023-11-14T12:55:05 IST" name="Suite" finished-at="2023-11-14T12:55:14 IST" duration-ms="9401">
     <groups>
     </groups>
-    <test started-at="2023-11-14T11:23:33 IST" name="Test" finished-at="2023-11-14T11:23:43 IST" duration-ms="10540">
+    <test started-at="2023-11-14T12:55:05 IST" name="Test" finished-at="2023-11-14T12:55:14 IST" duration-ms="9401">
       <class name="testCases.herokuTestCase">
-        <test-method signature="Basic_Auth_Checking()[pri:0, instance:testCases.herokuTestCase@74e28667]" started-at="2023-11-14T11:23:33 IST" name="Basic_Auth_Checking" finished-at="2023-11-14T11:23:40 IST" duration-ms="6998" status="PASS">
+        <test-method signature="Basic_Auth_Checking()[pri:0, instance:testCases.herokuTestCase@5149d738]" started-at="2023-11-14T12:55:05 IST" name="Basic_Auth_Checking" finished-at="2023-11-14T12:55:09 IST" duration-ms="3832" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Basic_Auth_Checking -->
-        <test-method signature="Broken_Image_Checking()[pri:1, instance:testCases.herokuTestCase@74e28667]" started-at="2023-11-14T11:23:40 IST" name="Broken_Image_Checking" finished-at="2023-11-14T11:23:43 IST" duration-ms="2945" status="FAIL">
+        <test-method signature="Broken_Image_Checking()[pri:1, instance:testCases.herokuTestCase@5149d738]" started-at="2023-11-14T12:55:09 IST" name="Broken_Image_Checking" finished-at="2023-11-14T12:55:12 IST" duration-ms="3569" status="FAIL">
           <exception class="java.lang.AssertionError">
             <message>
               <![CDATA[expected [0] but found [1]]]>
@@ -25,7 +25,7 @@ at org.testng.Assert.assertEquals(Assert.java:132)
 at org.testng.Assert.assertEquals(Assert.java:1419)
 at org.testng.Assert.assertEquals(Assert.java:1383)
 at org.testng.Assert.assertEquals(Assert.java:1429)
-at pages.herokuApp.brokenImage(herokuApp.java:57)
+at pages.herokuApp.brokenImage(herokuApp.java:53)
 at testCases.herokuTestCase.Broken_Image_Checking(herokuTestCase.java:21)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
@@ -61,13 +61,21 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Broken_Image_Checking -->
+        <test-method signature="checkbox_checking()[pri:2, instance:testCases.herokuTestCase@5149d738]" started-at="2023-11-14T12:55:12 IST" name="checkbox_checking" finished-at="2023-11-14T12:55:13 IST" duration-ms="986" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkbox_checking -->
+        <test-method signature="contextAlert()[pri:3, instance:testCases.herokuTestCase@5149d738]" started-at="2023-11-14T12:55:13 IST" name="contextAlert" finished-at="2023-11-14T12:55:14 IST" duration-ms="510" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- contextAlert -->
       </class> <!-- testCases.herokuTestCase -->
       <class name="testCases.loginPageTC">
-        <test-method is-config="true" signature="initialSetup()[pri:0, instance:testCases.loginPageTC@3b0fe47a]" started-at="2023-11-14T11:23:30 IST" name="initialSetup" finished-at="2023-11-14T11:23:33 IST" duration-ms="2874" status="PASS">
+        <test-method is-config="true" signature="initialSetup()[pri:0, instance:testCases.loginPageTC@75d3a5e0]" started-at="2023-11-14T12:55:01 IST" name="initialSetup" finished-at="2023-11-14T12:55:05 IST" duration-ms="3109" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initialSetup -->
-        <test-method signature="loginTC_05()[pri:5, instance:testCases.loginPageTC@3b0fe47a]" started-at="2023-11-14T11:23:33 IST" name="loginTC_05" finished-at="2023-11-14T11:23:33 IST" duration-ms="529" status="PASS">
+        <test-method signature="loginTC_05()[pri:5, instance:testCases.loginPageTC@75d3a5e0]" started-at="2023-11-14T12:55:05 IST" name="loginTC_05" finished-at="2023-11-14T12:55:05 IST" duration-ms="455" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginTC_05 -->
