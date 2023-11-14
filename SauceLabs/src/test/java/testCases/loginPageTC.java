@@ -64,9 +64,9 @@ public class loginPageTC extends loginPageMethods{
 		.login();
 	}
 	
-//	@AfterSuite()
-//	public void close() {
-//		driver.close();	
-//	}
+	@AfterSuite()
+	public void close() {
+		driver.close();	
+	}
 
 }
