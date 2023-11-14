@@ -5,7 +5,7 @@
     <classes>
       <class name="testCases.herokuTestCase">
         <methods>
-          <include name="TC_01"/>
+          <include name="Broken_Image_Checking"/>
         </methods>
       </class> <!-- testCases.herokuTestCase -->
     </classes>
