@@ -25,14 +25,14 @@ public class herokuTestCase extends herokuApp{
 	@Test(priority=2)
 	public void checkbox_checking(){
 		new herokuApp()
-		.checkBox()
-		.context_Alert();
+		.checkBox();
 	}
 	
 	//selecting a checkbox
 	@Test(priority=3)
 	public void contextAlert() {
 		new herokuApp()
-		.context_Alert();
+		.context_Alert()
+		.handling_ad();
 	}
 }

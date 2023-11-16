@@ -95,4 +95,11 @@ public class herokuApp extends commonUtilities {
 		driver.switchTo().alert().accept();
 		return this;
 	}
+	
+	public herokuApp handling_ad() {
+		driver.get("https://the-internet.herokuapp.com/entry_ad");
+		waitForElement(By.xpath("//h3"));
+		driver.findElement(By.xpath("//p[text()='Close']")).click();
+		return this;
+	}
 }
