@@ -64,7 +64,7 @@ public class productMethods extends commonUtilities {
 				
 				
 		}
-		int count = driver.findElement(By.xpath("//span[@class='shopping_cart_badge']")).getText();
+		String count = driver.findElement(By.xpath("//span[@class='shopping_cart_badge']")).getText();
 		System.out.println(count);
 		if(count==4) {
 			System.out.println("Same value");
