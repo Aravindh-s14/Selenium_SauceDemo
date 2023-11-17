@@ -5,7 +5,7 @@
     <classes>
       <class name="testCases.herokuTestCase">
         <methods>
-          <include name="TC_01"/>
+          <include name="contextAlert"/>
         </methods>
       </class> <!-- testCases.herokuTestCase -->
     </classes>

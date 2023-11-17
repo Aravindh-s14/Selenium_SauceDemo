@@ -18,6 +18,7 @@ public class productPageTC extends productMethods{
 	@Test(priority=1)
 	public void productTC_02() {
 		new productMethods()
-		.addToCart("Sauce Labs Fleece Jacket");
+		.addToCart("Sauce Labs Fleece Jacket")
+		.testethod();
 	}
 }

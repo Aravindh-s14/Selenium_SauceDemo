@@ -53,4 +53,25 @@ public class productMethods extends commonUtilities {
 		}
 		return this;
 	}
+	
+	public productMethods testethod() {
+		int i;
+		for(i=0;i<3;i++) {
+			//String currentName = names.get(i).getText();
+			//if(currentName.equals(productName)) {
+				driver.findElements(By.xpath("//button[text()='Add to cart']")).get(i).click();
+			//}
+				
+				
+		}
+		String count = driver.findElement(By.xpath("//span[@class='shopping_cart_badge']")).getText();
+		System.out.println(count);
+		if(count==4) {
+			System.out.println("Same value");
+		}
+		else {
+			System.out.println(i+1);
+		}
+		return this;
+	}
 }
