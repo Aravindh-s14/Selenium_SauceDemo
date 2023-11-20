@@ -2,26 +2,26 @@
 <testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-11-20T17:12:09 IST" name="Suite" finished-at="2023-11-20T17:12:10 IST" duration-ms="897">
+  <suite started-at="2023-11-20T19:50:24 IST" name="Suite" finished-at="2023-11-20T19:50:26 IST" duration-ms="1538">
     <groups>
     </groups>
-    <test started-at="2023-11-20T17:12:09 IST" name="Test" finished-at="2023-11-20T17:12:10 IST" duration-ms="897">
+    <test started-at="2023-11-20T19:50:24 IST" name="Test" finished-at="2023-11-20T19:50:26 IST" duration-ms="1538">
       <class name="testCases.loginPageTC">
-        <test-method is-config="true" signature="initialSetup()[pri:0, instance:testCases.loginPageTC@248e319b]" started-at="2023-11-20T17:12:07 IST" name="initialSetup" finished-at="2023-11-20T17:12:09 IST" duration-ms="2552" status="PASS">
+        <test-method is-config="true" signature="initialSetup()[pri:0, instance:testCases.loginPageTC@248e319b]" started-at="2023-11-20T19:50:21 IST" name="initialSetup" finished-at="2023-11-20T19:50:24 IST" duration-ms="3000" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initialSetup -->
-        <test-method signature="loginTC_05()[pri:5, instance:testCases.loginPageTC@248e319b]" started-at="2023-11-20T17:12:09 IST" name="loginTC_05" finished-at="2023-11-20T17:12:10 IST" duration-ms="360" status="PASS">
+        <test-method signature="loginTC_05()[pri:5, instance:testCases.loginPageTC@248e319b]" started-at="2023-11-20T19:50:25 IST" name="loginTC_05" finished-at="2023-11-20T19:50:25 IST" duration-ms="581" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginTC_05 -->
       </class> <!-- testCases.loginPageTC -->
       <class name="testCases.productPageTC">
-        <test-method signature="productTC_01()[pri:0, instance:testCases.productPageTC@3b0fe47a]" started-at="2023-11-20T17:12:10 IST" name="productTC_01" finished-at="2023-11-20T17:12:10 IST" duration-ms="131" status="PASS">
+        <test-method signature="productTC_01()[pri:0, instance:testCases.productPageTC@3b0fe47a]" started-at="2023-11-20T19:50:25 IST" name="productTC_01" finished-at="2023-11-20T19:50:25 IST" duration-ms="213" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- productTC_01 -->
-        <test-method signature="productTC_02()[pri:1, instance:testCases.productPageTC@3b0fe47a]" started-at="2023-11-20T17:12:10 IST" name="productTC_02" finished-at="2023-11-20T17:12:10 IST" duration-ms="373" status="PASS">
+        <test-method signature="productTC_02()[pri:1, instance:testCases.productPageTC@3b0fe47a]" started-at="2023-11-20T19:50:25 IST" name="productTC_02" finished-at="2023-11-20T19:50:26 IST" duration-ms="698" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- productTC_02 -->
