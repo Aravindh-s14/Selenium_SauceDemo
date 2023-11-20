@@ -19,6 +19,6 @@ public class productPageTC extends productMethods{
 	public void productTC_02() {
 		new productMethods()
 		.addToCart("Sauce Labs Fleece Jacket")
-		.testethod();
+		.removefromCart();
 	}
 }
