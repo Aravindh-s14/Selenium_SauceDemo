@@ -5,7 +5,6 @@
     <classes>
       <class name="testCases.herokuTestCase">
         <methods>
-          <include name="contextAlert"/>
           <include name="Broken_Image_Checking"/>
         </methods>
       </class> <!-- testCases.herokuTestCase -->

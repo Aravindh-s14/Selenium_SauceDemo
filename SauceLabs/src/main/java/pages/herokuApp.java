@@ -11,6 +11,8 @@ import org.testng.Assert;
 import org.apache.http.client.methods.CloseableHttpResponse;
 import org.apache.http.client.methods.HttpGet;
 import utitlities.commonUtilities;
+
+import org.openqa.selenium.interactions.Action;
 import org.openqa.selenium.interactions.Actions;
 
 public class herokuApp extends commonUtilities {
@@ -101,16 +103,31 @@ public class herokuApp extends commonUtilities {
 		driver.findElement(By.xpath("//p[text()='Close']")).click();
 		return this;
 	}
-
+	
+	
+	//Method to drag an element from one location to another.
+	
 	public herokuApp drag_drop() {
 		driver.get("https://the-internet.herokuapp.com/drag_and_drop");
 		WebElement from = driver.findElement(By.xpath("//div[@id='column-a']"));
 		WebElement to = driver.findElement(By.xpath("//div[@id='column-b']"));
-		Actions action = new Actions(driver);
-		action.dragAndDrop(from, to).build().perform();
+		
+		/* Method 1 to drag and drop*/
+		/*
+		 * Actions action = new Actions(driver); action.dragAndDrop(from,
+		 * to).build().perform(); Assert.assertEquals(from.getText(), "B");
+		 */
+		
+		/* Method 2 to drag and drop*/
+		Actions builder = new Actions(driver);
+		Action dragAndDrop = builder.clickAndHold(from)
+				.moveToElement(to)
+				.release(to)
+				.build();
+		dragAndDrop.perform();
 		Assert.assertEquals(from.getText(), "B");
+		
 		return this;
-
 	}
 
 }
