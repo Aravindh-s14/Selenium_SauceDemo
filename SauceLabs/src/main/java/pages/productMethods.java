@@ -74,9 +74,8 @@ public class productMethods extends commonUtilities {
 
 		driver.findElement(By.xpath("//a[@class='shopping_cart_link']")).click();
 
-		
-		//method #1 - remove all the products from cart
-		
+		// method #1 - remove all the products from cart
+
 		/*
 		 * List<WebElement> remove_button =
 		 * driver.findElements(By.xpath("//button[text()='Remove']"));
@@ -84,12 +83,10 @@ public class productMethods extends commonUtilities {
 		 * for(WebElement button : remove_button) { System.out.println(button);
 		 * driver.findElement(By.xpath("//button[text()='Remove']")).click(); }
 		 */
-		
-		
-		//method #2 - remove all the products from cart
+
+		// method #2 - remove all the products from cart
 
 		for (int k = i; k >= 0; k--) {
-			System.out.println(k + "hello");
 			if (k >= 0) {
 				driver.findElements(By.xpath("//button[text()='Remove']")).get(k).click();
 			}
