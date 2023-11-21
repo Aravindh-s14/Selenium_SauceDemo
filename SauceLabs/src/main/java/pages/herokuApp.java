@@ -64,29 +64,28 @@ public class herokuApp extends commonUtilities {
 		System.out.println("The page " + iBrokenImageCount + "broken images");
 		return this;
 	}
-	
+
 	public herokuApp checkBox() {
 		driver.get("https://the-internet.herokuapp.com/checkboxes");
 		waitForElement(By.xpath("//h3[normalize-space()='Checkboxes']"));
-		
+
 		WebElement checkBox1 = driver.findElement(By.xpath("//form//input[1]"));
-		//boolean isSelected = checkBox1.isSelected();
+		// boolean isSelected = checkBox1.isSelected();
 		checkBox1.click();
-		if(checkBox1.isSelected()) {
+		if (checkBox1.isSelected()) {
 			System.out.println("Clicked");
 			Assert.assertEquals("Checkbox Checked", "Checkbox Checked");
-		}
-		else {
+		} else {
 			Assert.assertEquals("Unchecked", "Checked");
 		}
 		return this;
 	}
-	
-	//context menu clicking and handlin the alert
+
+	// context menu clicking and handlin the alert
 	public herokuApp context_Alert() {
 		driver.get("https://the-internet.herokuapp.com/context_menu");
 		waitForElement(By.xpath("//h3"));
-		
+
 		Actions actions = new Actions(driver);
 		WebElement div_box = driver.findElement(By.xpath("//div[@id='hot-spot']"));
 		actions.contextClick(div_box).perform();
@@ -95,11 +94,23 @@ public class herokuApp extends commonUtilities {
 		driver.switchTo().alert().accept();
 		return this;
 	}
-	
+
 	public herokuApp handling_ad() {
 		driver.get("https://the-internet.herokuapp.com/entry_ad");
 		waitForElement(By.xpath("//h3"));
 		driver.findElement(By.xpath("//p[text()='Close']")).click();
 		return this;
 	}
+
+	public herokuApp drag_drop() {
+		driver.get("https://the-internet.herokuapp.com/drag_and_drop");
+		WebElement from = driver.findElement(By.xpath("//div[@id='column-a']"));
+		WebElement to = driver.findElement(By.xpath("//div[@id='column-b']"));
+		Actions action = new Actions(driver);
+		action.dragAndDrop(from, to).build().perform();
+		Assert.assertEquals(from.getText(), "B");
+		return this;
+
+	}
+
 }

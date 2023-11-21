@@ -32,7 +32,14 @@ public class herokuTestCase extends herokuApp{
 	@Test(priority=3)
 	public void contextAlert() {
 		new herokuApp()
-		.context_Alert()
-		.handling_ad();
+		.context_Alert();
+		//.handling_ad();
+	}
+	
+	//drag and drop
+	@Test(priority=4)
+	public void dragAndDrop() {
+		new herokuApp()
+		.drag_drop();
 	}
 }

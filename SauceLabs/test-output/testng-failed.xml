@@ -3,11 +3,12 @@
 <suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Test(failed)">
     <classes>
-      <class name="testCases.productPageTC">
+      <class name="testCases.herokuTestCase">
         <methods>
-          <include name="productTC_02"/>
+          <include name="contextAlert"/>
+          <include name="Broken_Image_Checking"/>
         </methods>
-      </class> <!-- testCases.productPageTC -->
+      </class> <!-- testCases.herokuTestCase -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->
