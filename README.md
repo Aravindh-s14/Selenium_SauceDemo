@@ -24,7 +24,8 @@ Test cases are written for login and product pages, covering various scenarios t
 │       └── java
 │         └── tests   
 │              ├── LoginTests.java        
-│              └── ProductTests.java        
+│              └── ProductTests.java
+│              └── HerokuTests.java       
 │                           
 ├── .gitignore
 ├── pom.xml
