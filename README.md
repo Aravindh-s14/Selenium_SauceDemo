@@ -2,7 +2,7 @@
 
 ## Overview
 
-This project demonstrates Selenium test automation for Sauce Labs using Java and TestNG. It follows the Page Object Model (POM) architecture with three different packages:
+This project demonstrates Selenium test automation for <a href="https://www.saucedemo.com/">Sauce Labs</a> and <a href="https://the-internet.herokuapp.com/">HerokuApp</a> using Java and TestNG. It follows the Page Object Model (POM) architecture with three different packages:
 
 - **locators:** Contains classes for storing locators.
 - **pages:** Contains classes with methods for each page.
@@ -32,7 +32,33 @@ Test cases are written for login and product pages, covering various scenarios t
 └── README.md
 ```
 ## Test Cases
-Login Tests
+
+## Heroku - HerokuApp
+<ol>
+  <li>
+    Accessing Page using Basic Auth
+  </li>
+  <li>
+    Broken image validation using HTTP Response Code
+  </li>
+  <li>
+    Handling CheckBox
+  </li>
+  <li>
+    Handling ContexAlert and Right Click
+  </li>
+  <li>
+    Handling Ad popups
+  </li>
+   <li>
+    Handling Drag and Drop [2 different Methods]
+  </li>
+  <li>
+    Handling dropdown
+  </li>
+</ol>
+
+## Login Tests - Suace Labs
 <ol><li>Login without Password:</li>
 <ul> 
 <li>Description: Verify that the user cannot log in without providing a password.</li>
@@ -71,7 +97,7 @@ Description: Verify successful login with valid credentials.</li>
 Test Class: LoginTests</li>
 </ul></ol>
 
-## Product Tests
+## Product Tests - Sauce Labs
 <ol>
   <li>
 List All Products:</li>
