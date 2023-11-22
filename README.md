@@ -30,3 +30,72 @@ Test cases are written for login and product pages, covering various scenarios t
 ├── pom.xml
 ├── testng.xml
 └── README.md
+```
+## Test Cases
+Login Tests
+<ol><li>Login without Password:</li>
+<ul> 
+<li>Description: Verify that the user cannot log in without providing a password.</li>
+<li>Test Class: LoginTests</li>
+</ul>
+<li>Login without Username:</li>
+<ul>
+<li>  
+Description: Verify that the user cannot log in without providing a username.
+</li>
+<li>
+Test Class: LoginTests
+</li>
+</ul>
+<li>Login with Invalid Password:</li>
+<ul>
+<li> 
+Description: Verify that the user cannot log in with an invalid password.
+</li>
+<li>
+Test Class: LoginTests
+</li>
+</ul>
+<li>Locked Out User Login:</li>
+<ul>
+<li> 
+Description: Verify that a locked-out user cannot log in.</li>
+<li>
+Test Class: LoginTests</li>
+</ul>
+<li>Successful Login:</li>
+<ul>
+<li> 
+Description: Verify successful login with valid credentials.</li>
+  <li>
+Test Class: LoginTests</li>
+</ul></ol>
+
+## Product Tests
+<ol>
+  <li>
+List All Products:</li>
+<ul>
+  <li>
+Description: Verify that all products are listed on the product page.</li>
+<li>Test Class: ProductTests</li>
+</ul>
+<li>Verify the Products Listed:</li>
+<ul>
+  <li>
+Description: Verify the accuracy of the listed products on the product page.</li>
+<li>Test Class: ProductTests</li>
+</ul>
+<li>Add Product to Cart:</li>
+<ul>
+  <li>
+Description: Verify the functionality to add a product to the cart.</li>
+<li>Test Class: ProductTests</li>
+</ul>
+<li>Remove Product from Cart:</li>
+<ul>
+  <li>
+Description: Verify the functionality to remove a product from the cart.</li>
+<li>Test Class: ProductTests</li>
+</ul>
+</ol>
