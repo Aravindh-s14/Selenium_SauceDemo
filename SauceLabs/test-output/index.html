@@ -25,7 +25,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite, 1 failed test</span>
+      <span class="top-banner-font-1">1 suite, 2 failed tests</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -92,7 +92,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">6 methods, 1 failed,   5 passed</span>
+                    <span class="method-stats">8 methods, 2 failed,   6 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title failed">Failed methods</span>
@@ -104,6 +104,11 @@
                       <span>
                         <img src="failed.png" width="3%"/>
                         <a href="#" panel-name="suite-Suite" title="testCases.herokuTestCase" class="method navigator-link" hash-for-method="Broken_Image_Checking">Broken_Image_Checking</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testCases.herokuTestCase" class="method navigator-link" hash-for-method="handling_Ad">handling_Ad</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content failed suite-Suite -->
@@ -137,6 +142,11 @@
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testCases.herokuTestCase" class="method navigator-link" hash-for-method="dropDown">dropDown</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-Suite" title="testCases.loginPageTC" class="method navigator-link" hash-for-method="loginTC_05">loginTC_05</a> <!-- method navigator-link -->
                       </span>
                       <br/>
@@ -164,10 +174,40 @@
                   </a> <!-- Broken_Image_Checking -->
                   <span class="method-name">Broken_Image_Checking</span>
                   <div class="stack-trace">java.lang.AssertionError: expected [0] but found [1]
-	at pages.herokuApp.brokenImage(herokuApp.java:55)
+	at pages.herokuApp.brokenImage(herokuApp.java:56)
 	at testCases.herokuTestCase.Broken_Image_Checking(herokuTestCase.java:21)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 ... Removed 34 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="handling_Ad">
+                  </a> <!-- handling_Ad -->
+                  <span class="method-name">handling_Ad</span>
+                  <div class="stack-trace">org.openqa.selenium.ElementNotInteractableException: element not interactable
+  (Session info: chrome=119.0.6045.160)
+Build info: version: &apos;4.15.0&apos;, revision: &apos;1d14b5521b&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.7&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [8588f1492cb62dfa7976e4579d52518a, clickElement {id=6EBACA6475E90F014C8AF97765AB501F_element_47}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 119.0.6045.160, chrome: {chromedriverVersion: 119.0.6045.105 (38c72552c5e..., userDataDir: C:\Users\ARAVIN~1.PAN\AppDa...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:63644}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:63644/devtoo..., se:cdpVersion: 119.0.6045.160, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (8588f1492cb62dfa7976e4579d52518a)] -&gt; xpath: //p[text()=&apos;Close&apos;]]
+Session ID: 8588f1492cb62dfa7976e4579d52518a
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:607)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:224)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)
+	at pages.herokuApp.handling_ad(herokuApp.java:104)
+	at testCases.herokuTestCase.handling_Ad(herokuTestCase.java:55)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 32 stack frames
 </div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
@@ -220,6 +260,13 @@
                   <a name="dragAndDrop">
                   </a> <!-- dragAndDrop -->
                   <span class="method-name">dragAndDrop</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="dropDown">
+                  </a> <!-- dropDown -->
+                  <span class="method-name">dropDown</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -281,36 +328,44 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(6);
+data.addRows(8);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'Basic_Auth_Checking')
 data.setCell(0, 2, 'testCases.herokuTestCase')
-data.setCell(0, 3, 4508);
+data.setCell(0, 3, 5048);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'Broken_Image_Checking')
 data.setCell(1, 2, 'testCases.herokuTestCase')
-data.setCell(1, 3, 2869);
+data.setCell(1, 3, 4956);
 data.setCell(2, 0, 2)
 data.setCell(2, 1, 'dragAndDrop')
 data.setCell(2, 2, 'testCases.herokuTestCase')
-data.setCell(2, 3, 694);
+data.setCell(2, 3, 751);
 data.setCell(3, 0, 3)
 data.setCell(3, 1, 'contextAlert')
 data.setCell(3, 2, 'testCases.herokuTestCase')
-data.setCell(3, 3, 480);
+data.setCell(3, 3, 541);
 data.setCell(4, 0, 4)
-data.setCell(4, 1, 'checkbox_checking')
+data.setCell(4, 1, 'dropDown')
 data.setCell(4, 2, 'testCases.herokuTestCase')
-data.setCell(4, 3, 383);
+data.setCell(4, 3, 447);
 data.setCell(5, 0, 5)
-data.setCell(5, 1, 'loginTC_05')
-data.setCell(5, 2, 'testCases.loginPageTC')
-data.setCell(5, 3, 342);
+data.setCell(5, 1, 'checkbox_checking')
+data.setCell(5, 2, 'testCases.herokuTestCase')
+data.setCell(5, 3, 431);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'handling_Ad')
+data.setCell(6, 2, 'testCases.herokuTestCase')
+data.setCell(6, 3, 411);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'loginTC_05')
+data.setCell(7, 2, 'testCases.loginPageTC')
+data.setCell(7, 3, 343);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 9 seconds</span>
+              <span class="suite-total-time">Total running time: 12 seconds</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -331,13 +386,13 @@ return data;
             <div class="ignored-class-div">
               <span class="ignored-class-name">testCases.loginPageTC</span>
               <div class="ignored-methods-div">
-                <span class="ignored-method-name">loginTC_03</span>
+                <span class="ignored-method-name">loginTC_01</span>
                 <br/>
                 <span class="ignored-method-name">loginTC_02</span>
                 <br/>
-                <span class="ignored-method-name">loginTC_04</span>
+                <span class="ignored-method-name">loginTC_03</span>
                 <br/>
-                <span class="ignored-method-name">loginTC_01</span>
+                <span class="ignored-method-name">loginTC_04</span>
                 <br/>
               </div> <!-- ignored-methods-div -->
             </div> <!-- ignored-class-div -->
@@ -356,32 +411,42 @@ return data;
               </div> <!-- configuration-suite before -->
               <div class="test-method">
                 <span class="method-name">loginTC_05</span>
-                <span class="method-start">2631 ms</span>
+                <span class="method-start">2584 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">testCases.herokuTestCase</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">Basic_Auth_Checking</span>
-                <span class="method-start">2979 ms</span>
+                <span class="method-start">2936 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">Broken_Image_Checking</span>
-                <span class="method-start">7489 ms</span>
+                <span class="method-start">7985 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">checkbox_checking</span>
-                <span class="method-start">10362 ms</span>
+                <span class="method-start">12949 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">contextAlert</span>
-                <span class="method-start">10747 ms</span>
+                <span class="method-start">13382 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">dragAndDrop</span>
-                <span class="method-start">11228 ms</span>
+                <span class="method-start">13925 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">dropDown</span>
+                <span class="method-start">14677 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">handling_Ad</span>
+                <span class="method-start">15124 ms</span>
               </div> <!-- test-method -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

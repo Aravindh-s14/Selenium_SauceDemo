@@ -14,6 +14,7 @@ import utitlities.commonUtilities;
 
 import org.openqa.selenium.interactions.Action;
 import org.openqa.selenium.interactions.Actions;
+import org.openqa.selenium.support.ui.Select;
 
 public class herokuApp extends commonUtilities {
 
@@ -83,7 +84,7 @@ public class herokuApp extends commonUtilities {
 		return this;
 	}
 
-	// context menu clicking and handlin the alert
+	// context menu clicking and handling the alert
 	public herokuApp context_Alert() {
 		driver.get("https://the-internet.herokuapp.com/context_menu");
 		waitForElement(By.xpath("//h3"));
@@ -103,31 +104,38 @@ public class herokuApp extends commonUtilities {
 		driver.findElement(By.xpath("//p[text()='Close']")).click();
 		return this;
 	}
-	
-	
-	//Method to drag an element from one location to another.
-	
+
+	// Method to drag an element from one location to another.
+
 	public herokuApp drag_drop() {
 		driver.get("https://the-internet.herokuapp.com/drag_and_drop");
 		WebElement from = driver.findElement(By.xpath("//div[@id='column-a']"));
 		WebElement to = driver.findElement(By.xpath("//div[@id='column-b']"));
-		
-		/* Method 1 to drag and drop*/
+
+		/* Method 1 to drag and drop */
 		/*
 		 * Actions action = new Actions(driver); action.dragAndDrop(from,
 		 * to).build().perform(); Assert.assertEquals(from.getText(), "B");
 		 */
-		
-		/* Method 2 to drag and drop*/
+
+		/* Method 2 to drag and drop */
 		Actions builder = new Actions(driver);
-		Action dragAndDrop = builder.clickAndHold(from)
-				.moveToElement(to)
-				.release(to)
-				.build();
+		Action dragAndDrop = builder.clickAndHold(from).moveToElement(to).release(to).build();
 		dragAndDrop.perform();
 		Assert.assertEquals(from.getText(), "B");
-		
+
 		return this;
 	}
 
+	//to fetch value from a dropdown and assert.
+	public herokuApp dropdown() {
+		driver.get("https://the-internet.herokuapp.com/dropdown");
+		WebElement drop = driver.findElement(By.xpath("//select[@id='dropdown']"));
+		Select dropdown = new Select(drop);
+		dropdown.selectByVisibleText("Option 2");
+		String actual = dropdown.getFirstSelectedOption().getText();
+		System.out.println(actual);
+		Assert.assertEquals(actual, "Option 2");
+		return this;
+	}
 }

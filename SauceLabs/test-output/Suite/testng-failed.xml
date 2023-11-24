@@ -6,6 +6,7 @@
       <class name="testCases.herokuTestCase">
         <methods>
           <include name="Broken_Image_Checking"/>
+          <include name="handling_Ad"/>
         </methods>
       </class> <!-- testCases.herokuTestCase -->
     </classes>
