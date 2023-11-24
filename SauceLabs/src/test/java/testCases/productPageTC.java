@@ -10,15 +10,25 @@ public class productPageTC extends productMethods{
 	@Test(priority=0)
 	public void productTC_01(){
 		new productMethods()
-		.allProduct()
+		.allProduct();
+	}
+	
+	@Test(priority=1)
+	public void productTC_02(){
+		new productMethods()
 		.verifyAll();
 	}
 	
 	//add specific product to cart
-	@Test(priority=1)
-	public void productTC_02() {
+	@Test(priority=2)
+	public void productTC_03() {
 		new productMethods()
-		.addToCart("Sauce Labs Fleece Jacket")
+		.addToCart("Sauce Labs Fleece Jacket");
+	}
+	
+	@Test(priority=3)
+	public void productTC_04() {
+		new productMethods()
 		.removefromCart();
 	}
 }

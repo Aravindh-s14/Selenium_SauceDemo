@@ -42,4 +42,16 @@ public class herokuTestCase extends herokuApp{
 		new herokuApp()
 		.drag_drop();
 	}
+	
+	@Test(priority=5)
+	public void dropDown() {
+		new herokuApp()
+		.dropdown();
+	}
+	
+	@Test(priority=6)
+	public void handling_Ad() {
+		new herokuApp()
+		.handling_ad();
+	}
 }
